@@ -1,0 +1,43 @@
+<!DOCTYPE html Profile>
+
+<div class="companybox">
+<head>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  <style>
+    body {
+      color: #B22222;
+      font-family: 'Tangerine', serif;
+      font-size: 48px;
+    }
+  </style>
+</head>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mommy:</b>
+  <%= @mom.user %>
+
+  <% @mom.profiles.each do |profile| %>
+
+    <li> Age - <%= profile.age%></li>
+    <li> Neighborhood - <%= profile.neighborhood %></li>
+    <li> Hobbies - <%= profile.hobby %></li>
+    <li> Kids - <%= profile.children %></li>
+
+    <% end %>
+
+<b>
+    <a href="mailto:<%= @mom.user %>" class="button">					
+    						Send <%= @mom.user%> an Email!
+    					</a>
+
+</p>
+
+
+<%= link_to 'Edit Mom', edit_mom_path(@mom) %> |
+<%= link_to 'Back', moms_path %> |
+<%= link_to 'Edit Profile', edit_profile_path(@profile) %>
+
+</div>
+

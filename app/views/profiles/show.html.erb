@@ -1,0 +1,41 @@
+<div class="companybox">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  <style>
+    body {
+      color: #B22222;
+      font-family: 'Tangerine', serif;
+      font-size: 48px;
+    }
+  </style>
+</head>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Age:</b>
+  <%= @profile.age %>
+</p>
+
+<p>
+  <b>Neighborhood:</b>
+  <%= @profile.neighborhood %>
+</p>
+
+<p>
+  <b>Hobby:</b>
+  <%= @profile.hobby %>
+</p>
+
+<p>
+  <b>Children:</b>
+  <%= @profile.children %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>
+
+</div>

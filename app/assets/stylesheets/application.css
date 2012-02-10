@@ -1,0 +1,88 @@
+html {
+    	background: url("bethmalin.jpg") no-repeat center center fixed;
+    	-webkit-background-size: cover;
+      	-moz-background-size: cover;
+    	-o-background-size: cover;
+    	background-size: cover;
+    	height: auto;
+    	width: auto;
+		display: block;
+		 
+}
+
+
+#header {
+	    color: #339933;
+	  	font-size: 30px;
+	}
+	
+
+#body {
+		font-family: 'Diplomata';
+		color: blue;
+		font-size: 20px;
+}
+
+/*#companyname {
+	
+		color: orange;
+		font-family: 'Diplomata';
+		font-weight: bold;
+		font-size: 100px;
+		padding: 25px 0 0 0;	
+	}*/
+	
+.companyname {
+	color: green;
+	font-family: 'Allura', 'cursive';
+	font-weight: bold;
+	font-size: 25px;
+	padding: 25px 0 0 0;
+}
+
+.companybox {
+	background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #00A3EF 100%); 
+	width:460px;
+	min-height:100px;
+	border:7px outset blue;"
+	padding: 25px 0 0 0;
+}
+
+.companyshow {
+	background-image: -webkit-linear-gradient(right, #FFFFFF 0%, #00A3EF 100%); 
+	width:350px;
+	min-height:100px;
+	border:7px outset blue;"
+}
+
+
+.companyshowname {
+	color: orange;
+	font-family: 'Diplomata';
+	font-weight: bold;
+	font-size: 25px;
+	padding: 25px 0 0 0;
+}
+
+
+#companycatch {
+		
+			color: orange;
+			font-family: 'Diplomata';
+			font-weight: bold;
+			font-size: 35px;
+			padding: 25px 0 0 0;
+	
+	
+}
+
+#show {
+	
+	
+	
+	
+	
+}
+	
+}
+

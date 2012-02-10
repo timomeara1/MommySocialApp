@@ -1,0 +1,50 @@
+<!DOCTYPE html Public>
+<div class="companybox">
+<head>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  <style>
+    body {
+      color: #B22222;
+      font-family: 'Tangerine', serif;
+      font-size: 25px;
+    }
+  </style>
+</head>
+<h1>The Mommy Network</h1>
+<h2>Social Networking for Moms on the Go!</h2>
+
+
+<h3>Our Mommies!</h3>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @moms.each do |mom| %>
+  <tr>
+    <td><%= mom.user %></td>
+    <td><%= link_to 'Mommy Profile', mom %></td>
+    <td><%= link_to 'Edit Profile', edit_mom_path(mom) %></td>
+    <td><%= link_to 'Delete Profile', mom, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Sign Up Today!', new_mom_path %>
+
+<br />
+
+<br />
+
+<a href="mailto:tim@mommynetwork.com" class="button">					
+						Send Us an Email!
+					</a>
+</div>
+
+
